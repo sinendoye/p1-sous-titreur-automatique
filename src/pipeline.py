@@ -2,12 +2,13 @@
 
 from pathlib import Path
 
-from src.transcription import extraire_audio, transcrire
-from src.sous_titres import segments_vers_srt, incruster_sous_titres
-
+from src.transcription import extraire_audio, transcrire, precharger_libs_cuda12
+from src.sous_titres import segments_vers_srt, incruster_sous_titres, verifier_srt
 
 def executer_pipeline(chemin_video, taille_modele="small"):
     """Exécute toutes les étapes du sous-titrage automatique."""
+    
+    precharger_libs_cuda12()   # évite la bascule sur CPU dans Colab
 
     chemin_video = Path(chemin_video)
 
@@ -60,3 +61,11 @@ def executer_pipeline(chemin_video, taille_modele="small"):
     )
 
     print(f"Vidéo finale créée : {chemin_video_finale}")
+        verifier_srt(chemin_srt)
+
+    return {
+        "video": str(chemin_video_finale),
+        "srt": str(chemin_srt),
+        "duree_transcription": duree,
+        "nb_segments": len(segments),
+    }
