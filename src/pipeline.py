@@ -61,7 +61,7 @@ def executer_pipeline(chemin_video, taille_modele="small"):
     )
 
     print(f"Vidéo finale créée : {chemin_video_finale}")
-        verifier_srt(chemin_srt)
+    verifier_srt(chemin_srt)
 
     return {
         "video": str(chemin_video_finale),
