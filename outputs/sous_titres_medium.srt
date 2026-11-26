@@ -1,0 +1,62 @@
+
+1
+00:00:01,330 --> 00:00:05,142
+Bonjour à tous, j'espère que vous allez
+bien. Mon nom c'est Sine Ndoye Seck,
+
+2
+00:00:05,142 --> 00:00:08,436
+étudiant dans le référentiel intelligence
+artificielle ici à l'École du Code
+
+3
+00:00:08,436 --> 00:00:09,330
+Sonatel Académie.
+
+4
+00:00:09,330 --> 00:00:13,215
+Je suis là pour vous parler un peu de
+l'intelligence artificielle parce qu'on
+
+5
+00:00:13,215 --> 00:00:17,302
+sait tous ce que l'IA s'est imposé dans
+notre vie et aujourd'hui
+
+6
+00:00:17,302 --> 00:00:20,330
+au cœur de l'une des plus grandes
+révolutions technologiques de notre époque
+
+7
+00:00:20,330 --> 00:00:24,144
+Longtemps considérée comme une technologie
+réservée aux chercheurs
+
+8
+00:00:24,144 --> 00:00:27,865
+ou bien aux plus grandes entreprises,
+elle est désormais quelque chose
+
+9
+00:00:27,865 --> 00:00:28,330
+qui est présente dans notre quotidien,
+
+10
+00:00:28,330 --> 00:00:32,466
+dans nos téléphones, dans nos moteurs de
+recherche, dans les établissements de
+
+11
+00:00:32,466 --> 00:00:35,330
+santé, partout et même dans le secteur
+des transports.
+
+12
+00:00:35,330 --> 00:00:40,039
+Donc c'est un secteur qui mérite de plus
+amples attentions et qu'on l'étudie encore
+
+13
+00:00:40,039 --> 00:00:40,330
+plus.
