@@ -36,21 +36,19 @@ def precharger_libs_cuda12():
             break
 
 
-def extraire_audio(chemin_video, chemin_audio):
-    """Extrait le son d'une vidéo en WAV mono 16 kHz."""
+def extraire_audio(chemin_video, chemin_audio=None):
+    """Extrait le son d'une vidéo en WAV mono 16 kHz (Colab, Linux ou Windows)."""
+    if chemin_audio is None:
+        import tempfile
+        chemin_audio = os.path.join(tempfile.gettempdir(), "audio.wav")
 
     commande = [
-        "ffmpeg",
-        "-y",
+        "ffmpeg", "-y",
         "-i", str(chemin_video),
-        "-vn",
-        "-ac", "1",
-        "-ar", "16000",
-        str(chemin_audio)
+        "-vn", "-ac", "1", "-ar", "16000",
+        str(chemin_audio),
     ]
-
     subprocess.run(commande, check=True, capture_output=True)
-
     return chemin_audio
 
 
